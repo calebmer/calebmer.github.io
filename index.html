@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<ul class="articles">
+  {% for post in site.posts %}
+    {% unless post.draft %}
+      <div class="page">
+        <li class="article">
+          <h2 class="article-title">{{ post.title }}</h2>
+          <div class="article-byline">
+            <time datetime="{{ post.date }}">{{ post.date | date: "%b %d, %Y" }}</time>
+          </div>
+          <div class="article-excerpt">
+            {{ post.excerpt | markdownify }}
+            <a href="{{ post.url }}">Continue reading &rarr;</a>
+          </div>
+        </li>
+      </div>
+    {% endunless %}
+  {% endfor %}
+</ul>

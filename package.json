@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "watch": "jekyll serve & node_modules/.bin/livereload _site"
+  },
+  "devDependencies": {
+    "livereload": "^0.3.7"
+  }
+}

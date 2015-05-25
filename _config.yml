@@ -1,0 +1,18 @@
+title: Dirty Laundry
+subtitle: without all the heartache
+
+email: calebmeredith8@gmail.com
+
+description: >
+  TODO: Awesome description here
+
+permalink: pretty
+
+baseurl: ""
+url: "http://yourdomain.com"
+
+markdown: kramdown
+
+sass:
+  sass_dir: _styles
+  style: compressed
