@@ -1,0 +1,4 @@
+=util-underline($width: 3%, $distance: 6%)
+  $bottom: 100% - $distance
+  $top: $bottom - $width
+  background-image: linear-gradient($c-nope 0%, $c-nope $top, $c-blue $top, $c-blue $bottom, $c-nope $bottom, $c-nope 100%)

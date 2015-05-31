@@ -10,10 +10,8 @@ layout: default
         <div class="article-byline">
           <time datetime="{{ post.date }}">{{ post.date | date: "%b %d, %Y" }}</time>
         </div>
-        <div class="article-excerpt">
-          {{ post.excerpt | markdownify }}
-          <a href="{{ post.url }}">Continue reading &rarr;</a>
-        </div>
+        <div class="article-excerpt">{{ post.excerpt | markdownify }}</div>
+        <a class="article-readmore" href="{{ post.url }}">Continue reading &rarr;</a>
       </li>
     {% endunless %}
   {% endfor %}
