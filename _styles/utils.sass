@@ -1,4 +1,17 @@
-=util-underline($width: 3%, $distance: 6%)
-  $bottom: 100% - $distance
-  $top: $bottom - $width
-  background-image: linear-gradient($c-nope 0%, $c-nope $top, $c-blue $top, $c-blue $bottom, $c-nope $bottom, $c-nope 100%)
+@keyframes a-gradient
+  0%
+    background-position-x: (1 / 12) * 100%
+  100%
+    background-position-x: (11 / 12) * 100%
+
+=a-gradient
+  animation: a-gradient 3s linear infinite
+  background-image: linear-gradient(90deg, $c-blue, $c-blue, $c-purple, $c-purple, $c-blue, $c-green, $c-green, $c-blue, $c-purple, $c-purple, $c-blue, $c-blue)
+
+=scr-in($size: $sm)
+  @media(max-width: #{$size})
+    @content
+
+=scr-out($size: $sm)
+  @media(min-width: #{$size})
+    @content

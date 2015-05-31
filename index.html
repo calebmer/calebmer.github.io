@@ -2,17 +2,17 @@
 layout: default
 ---
 
-<ul class="articles">
+<div class="articles">
   {% for post in site.posts %}
     {% unless post.draft %}
-      <li class="article">
-        <h2 class="article-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <article class="article">
+        <h1 class="article-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
         <div class="article-byline">
           <time datetime="{{ post.date }}">{{ post.date | date: "%b %d, %Y" }}</time>
         </div>
         <div class="article-excerpt">{{ post.excerpt | markdownify }}</div>
         <a class="article-readmore" href="{{ post.url }}">Continue reading &rarr;</a>
-      </li>
+      </article>
     {% endunless %}
   {% endfor %}
-</ul>
+</div>

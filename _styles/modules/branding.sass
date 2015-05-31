@@ -3,19 +3,18 @@
 
   text-align: center
 
-.branding-icon
-  height: 3.3rem
-  margin: 0 auto
-    bottom: -0.3rem
-
 .branding-title
   margin: 1rem 0
 
   font-size: 3rem
   line-height: 3rem
 
+  a
+    +scr-in($md)
+      +a-gradient
+
 .branding-subtitle
-  color: $c-dk-grey
   font:
+    size: 1rem
     family: 'Merriweather', serif
     style: italic
