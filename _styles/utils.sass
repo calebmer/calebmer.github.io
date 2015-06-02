@@ -1,12 +1,17 @@
-@keyframes a-gradient
-  0%
-    background-position-x: (1 / 12) * 100%
-  100%
-    background-position-x: (11 / 12) * 100%
+$c-white:   hsl(0, 0%, 98%)
+$c-lt-grey: hsl(0, 0%, 80%)
+$c-grey:    hsl(0, 0%, 45%)
+$c-dk-grey: hsl(0, 0%, 28%)
+$c-black:   hsl(0, 0%, 18%)
+$c-purple:  hsl(260, 30%, 50%)
+$c-blue:    hsl(210, 70%, 50%)
+$c-green:   hsl(160, 50%, 50%)
 
-=a-gradient
-  animation: a-gradient 2.5s linear infinite
-  background-image: linear-gradient(90deg, $c-blue, $c-blue, $c-purple, $c-purple, $c-blue, $c-green, $c-green, $c-blue, $c-purple, $c-purple, $c-blue, $c-blue)
+$xs:  400px
+$sm:  700px
+$md: 1000px
+$lg: 1300px
+$xl: 1600px
 
 =scr-in($size: $sm)
   @media(max-width: #{$size})
@@ -15,3 +20,13 @@
 =scr-out($size: $sm)
   @media(min-width: #{$size})
     @content
+
+=a-gradient
+  animation: a-gradient 2.5s linear infinite
+  background-image: linear-gradient(90deg, $c-blue, $c-blue, $c-purple, $c-purple, $c-blue, $c-green, $c-green, $c-blue, $c-purple, $c-purple, $c-blue, $c-blue)
+
+@keyframes a-gradient
+  0%
+    background-position-x: (1 / 12) * 100%
+  100%
+    background-position-x: (11 / 12) * 100%

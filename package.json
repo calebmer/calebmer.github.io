@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "watch": "jekyll serve & node_modules/.bin/livereload _site"
+    "watch": "node_modules/.bin/livereload _site & jekyll serve"
   },
   "devDependencies": {
     "livereload": "^0.3.7"
