@@ -1,24 +1,39 @@
 .branding
-  margin: 3rem 0
-
   text-align: center
 
+  &.x-grand
+    margin: 3rem 0
+
+    .branding-title
+      margin: 1rem 0
+
+      font-size: 2.8rem
+      line-height: 3rem
+
+      +scr-in($xs)
+        margin: 0.25rem 0
+
+        font-size: 2.2rem
+        line-height: 2.5rem
+
+    .branding-subtitle
+      margin: 0.5rem 0
+
+      font-size: 1rem
+
 .branding-title
-  margin: 1rem 0
+  font-size: 1.5rem
+  line-height: 2rem
 
-  font-size: 2.8rem
-  line-height: 3rem
-
-  +scr-in($xs)
-    margin: 0.25rem 0
-
-    font-size: 2.2rem
-    line-height: 2.5rem
+  + .branding-subtitle
+    margin:
+      top: -0.5rem
+      bottom: 0.5rem
 
 .branding-subtitle
   color: $c-grey-dk
   font:
-    size: 1rem
+    size: 0.6rem
     family: 'Merriweather', serif
     style: italic
 

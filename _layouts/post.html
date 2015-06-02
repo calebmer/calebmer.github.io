@@ -2,8 +2,18 @@
 layout: default
 ---
 
+{% include header.html %}
+
 <main class="page">
   <article class="article">
-    {{ content }}
+    <header class="article-header">
+      <h1 class="article-title">{{ page.title }}</h1>
+      <div class="article-byline">
+        <time datetime="{{ post.date }}">{{ page.date | date: "%b %d, %Y" }}</time>&thinsp;&mdash;&thinsp;by {{ page.author }}
+      </div>
+    </header>
+    <main class="article-body">
+      {{ content }}
+    </main>
   </article>
 </main>
