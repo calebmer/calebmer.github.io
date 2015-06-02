@@ -2,7 +2,7 @@
   box-sizing: border-box
 
 ::selection
-  background-color: $c-lt-grey
+  background-color: $c-grey-lt
   text-shadow: none
 
 html
@@ -16,7 +16,7 @@ body
 
   background-color: $c-white
 
-  color: $c-dk-grey
+  color: $c-grey-dk
   font-size: 0.55rem
   font-family: 'Lora', serif
   line-height: 1rem
@@ -39,6 +39,9 @@ h1, h2, h3
     background-position-y: 1.06em
 
     text-shadow: 0.1ch 0 $c-white, -0.1ch 0 $c-white
+
+    &:visited
+      color: inherit
 
 h1
   font-size: 0.9rem
@@ -63,6 +66,9 @@ a
 
   &:hover
     +a-gradient
+
+  &:visited
+    color: $c-grey
 
 em
   font-style: italic

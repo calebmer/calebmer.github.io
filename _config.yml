@@ -18,6 +18,7 @@ defaults:
       type: posts
     values:
       layout: post
+      author: Caleb Meredith
 
 markdown: kramdown
 
