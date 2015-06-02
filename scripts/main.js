@@ -25,7 +25,7 @@ var content = $('#container').smoothState({
     duration: durationMs,
     render: function (url) {
       content.toggleAnimationClass('is-exiting');
-      $('html, body').animate({ scrollTop: 0 });
+      $('html, body').animate({ scrollTop: 0 }, durationMs);
     }
   }
 }).data('smoothState');
