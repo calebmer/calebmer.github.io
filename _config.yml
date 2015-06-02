@@ -9,7 +9,15 @@ description: >
 permalink: pretty
 
 baseurl: ""
-url: "http://yourdomain.com"
+url: http://yourdomain.com
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 
 markdown: kramdown
 
