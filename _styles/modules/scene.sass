@@ -1,0 +1,45 @@
+.scene-element
+  animation:
+    duration: 220ms
+    timing-function: ease-out
+    fill-mode: both
+
+  &.x-fade
+    animation-name: scene-fade-in
+
+    .is-exiting &
+      animation-name: scene-fade-out
+
+  &.x-slideup
+    animation-name: scene-slideup-in
+
+    .is-exiting &
+      animation-name: scene-slideup-out
+
+@keyframes scene-fade-in
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+@keyframes scene-fade-out
+  0%
+    opacity: 1
+  100%
+    opacity: 0
+
+@keyframes scene-slideup-in
+  0%
+    transform: translateY(-2rem)
+    opacity: 0
+  100%
+    transform: translateY(0)
+    opacity: 1
+
+@keyframes scene-slideup-out
+  0%
+    transform: translateY(0)
+    opacity: 1
+  100%
+    transform: translateY(-2rem)
+    opacity: 0

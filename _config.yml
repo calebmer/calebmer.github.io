@@ -8,7 +8,8 @@ description: >
 
 permalink: pretty
 
-baseurl: ""
+home: /
+baseurl:
 url: http://yourdomain.com
 
 defaults:

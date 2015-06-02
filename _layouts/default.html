@@ -4,7 +4,11 @@
 
   <body>
     <div id="container">
-      {{ content }}
+      {% include header.html %}
+
+      <main class="page scene-element x-fade">
+        {{ content }}
+      </main>
 
       {% include footer.html %}
     </div>
