@@ -1,21 +1,22 @@
 .has-cssanimations
   .scene-element
     animation:
-      duration: 220ms
+      duration: 130ms
       timing-function: ease-out
       fill-mode: both
 
     &.x-fade
       animation-name: scene-fade-in
 
-      .is-exiting &
-        animation-name: scene-fade-out
-
     &.x-slideup
       animation-name: scene-slideup-in
 
-      .is-exiting &
-        animation-name: scene-slideup-out
+  .is-exiting .scene-element
+    &.x-fade
+      animation-name: scene-fade-out
+
+    &.x-slideup
+      animation-name: scene-slideup-out
 
 @keyframes scene-fade-in
   0%
