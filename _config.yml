@@ -1,3 +1,6 @@
+source: source
+destination: destination
+
 title: Dirty Laundry
 subtitle: without all the heartache
 
@@ -22,7 +25,3 @@ defaults:
       author: Caleb Meredith
 
 markdown: kramdown
-
-sass:
-  sass_dir: _styles
-  style: compressed
