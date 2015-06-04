@@ -2,7 +2,7 @@
 <html lang="en">
   {% include head.html %}
 
-  <body>
+  <body class="{% if site.development %}is-development{% endif %}">
     <div id="container">
       {% include header.html %}
 

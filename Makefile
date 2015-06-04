@@ -1,7 +1,6 @@
-MODULES     = node_modules/.bin/
-DESTINATION = destination
-ASSETS      = assets
-SOURCE      = source
+MODULES = node_modules/.bin/
+SITE    = _site
+ASSETS  = assets
 
 SCRIPTS_SOURCE = $(ASSETS)/_scripts
 SCRIPTS_BUILD  = $(ASSETS)/scripts/main.js
@@ -32,6 +31,7 @@ clean:
 
 serve:
 	jekyll serve \
+		--config _config.yml,_development.yml \
 		--host localhost \
 		--future --unpublished --drafts
 
@@ -44,4 +44,8 @@ monitor:
 		-x "make styles"
 
 watch:
-	make monitor & make serve
+	make monitor \
+	& $(MODULES)browser-sync start \
+		--no-notify \
+		--files $(SITE) \
+	& make serve

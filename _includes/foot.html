@@ -1,2 +1,8 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="/assets/scripts/main.js"></script>
+
+{% if site.development %}
+<script type="text/javascript" id="__bs_script__">//<![CDATA[
+  document.write('<script async src="http://HOST:3000/browser-sync/browser-sync-client.2.7.6.js"><\/script>'.replace('HOST', location.hostname));
+//]]></script>
+{% endif %}
