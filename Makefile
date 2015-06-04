@@ -3,11 +3,11 @@ DESTINATION = destination
 ASSETS      = assets
 SOURCE      = source
 
-SCRIPTS_SOURCE = $(ASSETS)/scripts
-SCRIPTS_BUILD  = $(SOURCE)/$(ASSETS)/scripts/main.js
+SCRIPTS_SOURCE = $(ASSETS)/_scripts
+SCRIPTS_BUILD  = $(ASSETS)/scripts/main.js
 
-STYLES_SOURCE = $(ASSETS)/styles
-STYLES_BUILD  = $(SOURCE)/$(ASSETS)/styles/main.css
+STYLES_SOURCE = $(ASSETS)/_styles
+STYLES_BUILD  = $(ASSETS)/styles/main.css
 
 .PHONY: clean serve monitor watch
 

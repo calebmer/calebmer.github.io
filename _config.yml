@@ -1,6 +1,3 @@
-source: source
-destination: destination
-
 title: Dirty Laundry
 subtitle: without all the heartache
 
@@ -14,6 +11,11 @@ permalink: pretty
 home: /
 baseurl:
 url: http://yourdomain.com
+
+exclude:
+  - node_modules
+  - package.json
+  - Makefile
 
 defaults:
   -
