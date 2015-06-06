@@ -11,7 +11,7 @@ layout: default
           <time datetime="{{ post.date }}">{{ post.date | date: "%b %d, %Y" }}</time>&thinsp;&mdash;&thinsp;by {{ post.author }}
         </div>
         <div class="article-excerpt">{{ post.excerpt | markdownify }}</div>
-        <a class="article-readmore" href="{{ post.url }}">Continue reading &rarr;</a>
+        <a class="article-more" href="{{ post.url }}">Continue reading &rarr;</a>
       </article>
     {% endunless %}
   {% endfor %}
