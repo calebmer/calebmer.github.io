@@ -32,7 +32,7 @@ clean:
 serve:
 	jekyll serve \
 		--config _config.yml,_development.yml \
-		--host localhost \
+		--host 0.0.0.0 \
 		--future --unpublished --drafts
 
 monitor:
