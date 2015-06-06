@@ -1,12 +1,16 @@
+var $body = $('html, body');
+var $container = $('#container');
 var durationMs = parseFloat($('.scene-element').css('animation-duration')) * 1000;
 
-var content = $('#container').smoothState({
+$container.smoothState({
   prefetch: true,
   onStart: {
-    duration: durationMs,
     render: function (url) {
-      content.toggleAnimationClass('is-exiting');
-      $('html, body').scrollTop(0);
+
+      $content.addClass('is-exiting');
+      setTimeout(function () { $content.removeClass('is-exiting'); }, durationMs);
+
+      $body.scrollTop(0);
     }
   }
-}).data('smoothState');
+});

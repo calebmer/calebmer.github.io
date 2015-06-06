@@ -1,11 +1,13 @@
-function hangPunctuation() {
+var hangPunctuation = function () {
+
   var $this = $(this);
   if ($this.text().match(/^("|“|”)/)) {
     $this.addClass('is-hanging');
   }
 }
 
-function rescueOrphans() {
+var rescueOrphans = function () {
+
   var $this = $(this);
   var html  = $this.html();
   var words = html.split(' ').length;
