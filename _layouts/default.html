@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" class="has-no-js">
+<html lang="en" class="{% if site.development %}is-development{% endif %} has-no-js">
   {% include head.html %}
 
-  <body class="{% if site.development %}is-development{% endif %}">
+  <body>
     <div id="container">
       {% include header.html %}
 
-      <main class="page scene-element x-fade">
+      <main class="page">
         {{ content }}
       </main>
 

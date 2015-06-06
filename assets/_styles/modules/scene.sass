@@ -1,47 +1,48 @@
-.has-cssanimations
-  .scene-element
-    animation:
-      duration: 130ms
-      timing-function: ease-out
-      fill-mode: both
-
-    &.x-fade
-      animation-name: scene-fade-in
-
-    &.x-slideup
-      animation-name: scene-slideup-in
-
-  .is-exiting .scene-element
-    &.x-fade
-      animation-name: scene-fade-out
-
-    &.x-slideup
-      animation-name: scene-slideup-out
-
-@keyframes scene-fade-in
-  0%
-    opacity: 0
-  100%
-    opacity: 1
-
-@keyframes scene-fade-out
-  0%
-    opacity: 1
-  100%
-    opacity: 0
-
-@keyframes scene-slideup-in
-  0%
-    transform: translateY(-2rem)
-    opacity: 0
-  100%
-    transform: translateY(0)
-    opacity: 1
-
-@keyframes scene-slideup-out
-  0%
-    transform: translateY(0)
-    opacity: 1
-  100%
-    transform: translateY(-2rem)
-    opacity: 0
+// .has-cssanimations
+//   .scene-element
+//     animation:
+//       duration: 2000ms
+//       timing-function: ease
+//       fill-mode: both
+//
+//     &.x-fade
+//       animation-name: scene-fade-in
+//
+//     &.x-branding
+//       animation-name: scene-branding-in
+//       transform-origin: 50% -2rem 0
+//
+//   .is-exiting .scene-element
+//     &.x-fade
+//       animation-name: scene-fade-out
+//
+//     &.x-branding
+//       animation-name: scene-branding-out
+//
+// @keyframes scene-fade-in
+//   0%
+//     opacity: 0
+//   100%
+//     opacity: 1
+//
+// @keyframes scene-fade-out
+//   0%
+//     opacity: 1
+//   100%
+//     opacity: 0
+//
+// @keyframes scene-branding-in
+//   0%
+//     transform: scale(0) translateY(5rem)
+//     opacity: 0
+//   100%
+//     transform: none
+//     opacity: 1
+//
+// @keyframes scene-branding-out
+//   0%
+//     transform: none
+//     opacity: 1
+//   100%
+//     transform: scale(0) translateY(-5rem)
+//     opacity: 0
