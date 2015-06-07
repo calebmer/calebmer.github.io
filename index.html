@@ -8,7 +8,7 @@ layout: default
       <article class="article x-preview">
         <h1 class="article-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
         <div class="article-byline">
-          <time datetime="{{ post.date }}">{{ post.date | date: "%b %d, %Y" }}</time>&thinsp;&mdash;&thinsp;by {{ post.author }}
+          <time datetime="{{ post.date }}">{{ post.date | date: "%b %d, %Y" }}</time>&thinsp;&mdash;&thinsp;by {{ post.author.name }}
         </div>
         <div class="article-excerpt">{{ post.excerpt | markdownify }}</div>
         <a class="article-more" href="{{ post.url }}">Continue reading &rarr;</a>
