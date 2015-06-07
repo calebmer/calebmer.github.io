@@ -10,3 +10,28 @@
 
 .article-byline
   font-style: italic
+
+.article-body
+  h1, h2, h3
+    margin-top: 2rem
+
+  ul, ol
+    position: relative
+
+    > li:before
+      position: absolute
+      left: -0.75rem
+
+      width: 0.75rem
+
+      text-align: center
+
+  ul > li:before
+    content: "•"
+
+  ol
+    counter-reset: ol
+
+    > li:before
+      content: counter(ol)
+      counter-increment: ol

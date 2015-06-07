@@ -2,7 +2,7 @@
   box-sizing: border-box
 
 ::selection
-  background-color: $c-grey-lt
+  background-color: hsl(0, 0%, 88%)
   text-shadow: none
 
 html
@@ -75,3 +75,29 @@ em
 
 strong
   font-weight: 700
+
+hr
+  width: 72%
+  height: 1px
+  border: none
+  margin: 2rem auto
+
+  background-color: $c-grey
+  box-shadow: 0 -1px 0 $c-grey-lt
+
+blockquote
+  width: 60%
+  padding-left: 0.7rem
+  border-left: solid 1px $c-grey
+  margin: 2rem 0
+    left: -0.7rem
+
+  box-shadow: -1px 0 0 $c-grey-lt
+
+  color: $c-grey
+  font:
+    size: 0.6rem
+    style: italic
+
+  +scr-in($sm)
+    width: 80%
