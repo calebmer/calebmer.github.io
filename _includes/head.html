@@ -1,11 +1,9 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{{ site.title }}&mdash;A blog about web development and other life learnings</title>
-  <meta name="description" content="{{ site.description }}">
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}&mdash;A blog about web development and other life musings{% endif %}</title>
+  <meta name="description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-  <!-- TODO: <link rel="apple-touch-icon" href="apple-touch-icon.png"> -->
 
   <link rel="stylesheet" href="/assets/styles/main.css">
 </head>

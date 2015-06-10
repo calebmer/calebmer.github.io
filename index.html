@@ -16,3 +16,16 @@ layout: default
     {% endunless %}
   {% endfor %}
 </div>
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Blog",
+    "@id": "{{ site.url }}",
+    "about": {{ site.description | jsonify }},
+    "blogPost": [
+      {% for post in site.posts %}{% unless post.draft %}"{{ site.url }}{{ post.url }}"{% unless forloop.last %},{% endunless %}
+      {% endunless %}{% endfor %}
+    ]
+  }
+</script>
