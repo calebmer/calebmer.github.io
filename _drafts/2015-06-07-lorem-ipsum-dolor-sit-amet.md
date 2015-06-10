@@ -1,7 +1,8 @@
 ---
+date: 2015-06-07
 title: Cillum sunt officia pariatur quis culpa ipsum non sint ut nisi aute ea.
 category: Dolore
-excerpt: >
+summary: >
   Culpa sunt cillum proident officia consectetur. Est incididunt culpa nostrud mollit ipsum minim *aliquip proident tempor non* do ipsum. Reprehenderit ipsum laborum fugiat do enim cillum dolore. Fugiat minim ad ea reprehenderit sunt est mollit cupidatat Lorem non. Irure laboris commodo dolor eu proident consectetur labore fugiat quis id anim qui ea. Ex laborum aliquip sunt *qui irure esse* veniam. Sunt id ea nostrud sunt sit laboris do ullamco aliqua dolore eu incididunt aliquip fugiat. Cillum laborum Lorem ex consectetur eu et ullamco nisi ut fugiat dolor sit fugiat. Ea pariatur ex reprehenderit nulla et nisi **commodo** aliqua excepteur in sunt laborum tempor in.
 ---
 

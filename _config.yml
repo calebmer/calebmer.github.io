@@ -10,7 +10,7 @@ permalink: pretty
 
 home: /
 baseurl:
-url: http://yourdomain.com
+url: http://calebmer.github.io
 development: false
 
 exclude:
@@ -27,7 +27,5 @@ defaults:
       layout: post
       author:
         name: Caleb Meredith
-        bio: >
-          Labore sint nisi sit exercitation in ea esse et ad aliquip sint. Reprehenderit elit incididunt elit non enim velit ea do ut duis mollit minim exercitation. Aliqua fugiat ex elit laborum cillum nostrud eiusmod. Pariatur mollit ut laboris nostrud id exercitation. Tempor dolor quis minim in consectetur occaecat veniam non do fugiat ut adipisicing. Ex aliquip esse consectetur laborum culpa Lorem.
 
 markdown: kramdown

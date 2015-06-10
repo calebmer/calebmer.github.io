@@ -10,7 +10,7 @@ layout: default
         <div class="article-byline">
           <time datetime="{{ post.date }}">{{ post.date | date: "%b %d, %Y" }}</time>&thinsp;&mdash;&thinsp;by {{ post.author.name }}
         </div>
-        <div class="article-excerpt">{{ post.excerpt | markdownify }}</div>
+        <div class="article-excerpt">{{ post.summary | markdownify }}</div>
         <a class="article-more" href="{{ post.url }}">Continue reading &rarr;</a>
       </article>
     {% endunless %}

@@ -1,7 +1,8 @@
 ---
+date: 2015-05-23
 title: Adipisicing nulla enim tempor reprehenderit dolore anim.
 category: Dolore
-excerpt: >
+summary: >
   Et cillum eu et cupidatat pariatur anim et ex ut tempor adipisicing reprehenderit veniam. Elit quis et ad reprehenderit duis sit amet ad amet. Ut eu eu irure occaecat adipisicing culpa culpa aliquip reprehenderit excepteur in fugiat velit. Do ea nisi nostrud ipsum consequat nulla reprehenderit exercitation reprehenderit reprehenderit.
 ---
 

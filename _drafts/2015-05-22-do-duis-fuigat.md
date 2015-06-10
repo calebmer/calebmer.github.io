@@ -1,7 +1,8 @@
 ---
+date: 2015-05-22
 title: Do duis fugiat amet ex sint fugiat voluptate nisi tempor ut officia proident.
 category: Sint
-excerpt: >
+summary: >
   "Qui ex ut officia" duis exercitation duis et laborum nisi. Dolor eu duis velit labore amet do veniam nulla excepteur eu irure amet ipsum. Sunt sit *Lorem est ut fugiat* eu dolore. Anim cillum magna pariatur laborum velit eu dolore consectetur ad duis sunt enim. Enim elit veniam eu adipisicing qui et aliqua tempor eu in anim. Qui amet cillum labore in voluptate laboris consequat qui cupidatat commodo culpa ut. Nostrud irure sunt exercitation adipisicing fugiat dolore et veniam. Amet pariatur consectetur ad aute anim deserunt irure ex duis.
 ---
 
