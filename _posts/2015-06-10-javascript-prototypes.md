@@ -156,7 +156,7 @@ console.log(layer2); // # => { b: 2, __proto__: layer1 }
 console.log(layer3); // # => { c: 3, __proto__: layer2 }
 {% endhighlight %}
 
-Yesterday, I would not have understood the above code. It was the piece of the puzzle I was missing.
+Yesterday, I **would not have understood** the above code. It was the piece of the puzzle I was missing.
 
 ## The Final Implementation
 {% highlight javascript %}
@@ -176,8 +176,8 @@ OtherThing.prototype.hello = function () {
 
 var Thing = new OtherThing();
 Thing.call();                // works ✓
-var something = new Thing(); // works ✓
 
+var something = new Thing(); // works ✓
 something.hello();           // # => world (works ✓)
 
 OtherThing.prototype.__proto__ === Function.prototype
