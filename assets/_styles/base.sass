@@ -6,12 +6,22 @@
   text-shadow: none
 
 html
-  font-size: 34px
+  $rt-min: 27
+  $rt-scr-min: $sm / 1px
+  $rt-scr-max: (($md + $lg) / 2) / 1px
+  $rt-vw: ($rt-min * 1vw) / ($rt-scr-min / 100)
 
-  +scr-in($sm)
-    font-size: 27px
+  font-size: $rt-min * 1px
+
+  +scr-out($rt-scr-min * 1px)
+    font-size: $rt-vw
+
+  +scr-out($rt-scr-max * 1px)
+    font-size: ($rt-vw / 1vw) * ($rt-scr-max / 100) * 1px
 
 body
+  overflow-x: none
+
   padding: 1rem
 
   background-color: $c-white
@@ -19,11 +29,14 @@ body
   color: $c-grey-dk
   font-size: 0.55rem
   font-family: 'Lora', serif
+  -webkit-font-smoothing: antialiased
   line-height: 1rem
   letter-spacing: 0.02ch
 
 p
   margin: 1rem 0
+
+  word-wrap: break-word
 
   &.is-hanging
     text-indent: -0.6ch
@@ -33,10 +46,13 @@ h1, h2, h3
 
   color: $c-black
   font-family: 'Montserrat', sans-serif
+  text-rendering: optimizeLegibility
   line-height: 1rem
 
   a
-    background-position-y: 1.06em
+    background:
+      position-y: 1.06em
+      size: 400% 0.1ch
 
     text-shadow: 0.09ch 0 $c-white, -0.09ch 0 $c-white
 
@@ -56,7 +72,7 @@ a
   background:
     image: linear-gradient(90deg, $c-grey, $c-grey)
     position-y: 1.1em
-    size: 400% 0.1ch
+    size: 400% 1px
     repeat: no-repeat
 
   color: inherit
@@ -86,11 +102,13 @@ hr
   box-shadow: 0 -1px 0 $c-grey-lt
 
 blockquote
-  width: 60%
-  padding-left: 0.7rem
+  $bq-border: 0.45rem
+
+  width: 90%
+  padding-left: $bq-border
   border-left: solid 1px $c-grey
   margin: 2rem 0
-    left: -0.7rem
+    left: -$bq-border
 
   box-shadow: -1px 0 0 $c-grey-lt
 
@@ -106,6 +124,8 @@ code
   font-family: "Source Code Pro", monospace
 
 pre
+  overflow-x: scroll
+
   padding: 1rem
   margin: 1rem 0
 
