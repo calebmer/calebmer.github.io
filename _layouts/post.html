@@ -9,6 +9,9 @@ layout: default
       <time datetime="{{ post.date }}">{{ page.date | date: "%b %d, %Y" }}</time>&thinsp;&mdash;&thinsp;by {{ page.author.name }}
     </div>
   </header>
+  <blockquote class="article-summary">
+    {{ page.summary }}
+  </blockquote>
   <main class="article-body">
     {{ content }}
   </main>
