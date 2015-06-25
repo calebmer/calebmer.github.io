@@ -3,7 +3,7 @@ date: 2015-06-10
 title: "Javascript prototypes: Guys, I just got it"
 category: Technobabble
 subtitle: "The struggle to understand Javascript’s most challenging feature"
-summary: "A true understanding of Javascript’s most powerful feature has thus far eluding me. Up until yesterday. Prototypes can be confusing to developers, so I break down the process it took me to deconstruct this feature while. At the same time I also show off a rather interesting Javascript pattern."
+summary: "A true understanding of Javascript’s most powerful feature has thus far eluding me, up until yesterday. Prototypes can be confusing to developers, so I break down the process it took me to deconstruct this feature while. At the same time I also show off a rather interesting Javascript pattern."
 ---
 
 `__proto__`, my new best buddy. Although we do have a strict no touch policy. `__proto__` is a property on all Javascript objects in [most execution environments][1]. `__proto__` is a representation of what is, perhaps, Javascript’s most interesting feature. Prototypes.
