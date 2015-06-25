@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}&mdash;A blog about web development and other life musings{% endif %}</title>
+  <title>{% if page.url == site.home %}{{ site.title }}&mdash;A blog about web development and other life musings{% else %}{{ page.title }}{% endif %}</title>
   <meta name="description" content="{% if page.summary %}{{ page.summary }}{% else %}{{ site.description }}{% endif %}">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="twitter:card" content="summary">
