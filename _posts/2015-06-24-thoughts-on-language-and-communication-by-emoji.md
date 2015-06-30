@@ -12,31 +12,31 @@ So many novels, records, academic essays, even code is based upon this exclusive
 
 Yet somehow it is not enough.
 
-Communication, human interaction, through just words is hard.
+Communication, *human interaction*, through just words is hard.
 
-“Hey dork,” Bob types.
-
+“Hey dork,” Bob types.<br>
 “What’s up loser,” types Joe.
 
 Bob and Joe could be two dudes in a deep bromance, or they could be mortal enemies.
 
-When one texts, emails, comments, writes a letter, telegrams they lose out on entire depths of communication we take for granted. Eye contact, facial expression, body language, vocal inflection. All of that turns into 26 letters on paper.
+When one texts, emails, comments, writes a letter, telegrams they lose out on *entire depths of communication* that we all take for granted. Eye contact, facial expression, body language, vocal inflection. All of that turns into 26 letters on paper.
 
 Thus enters emoji :)
 
-One of the most (important?) inventions of the 21st century, emojis are more then annoying yellow circles, emojis reintroduce many of the non-verbal qualities we miss in our digital conversations. For example:
+One of the most (important?) inventions of the 21st century, emojis are more then annoying yellow circles, emojis *reintroduce* many of the non-verbal qualities we miss in our digital conversations. For example:
 
-“Super excited”
-
+“Super excited”<br>
 “Super excited :D”
+
+* * *
 
 Emojis also make us better liars.
 
-Normally in your communication you do not get the affordance of time to form a statement. When you communicate by text&mdash;time and emojis are the two things in excess.
+Normally in your communication you do not get the affordance of time to form a statement. When you communicate by text&mdash;time and emojis are the two things in *excess*.
 
-We have time to process our words before they leave us. Time to reason out the consequences. Time to set the tone with an emoji icon. Time to craft other’s perceptions of us, something we could never do with face to face contact.
+We have time to process our words before they leave us. Time to reason out the consequences. Time to set the tone with an emoji icon. Time to *craft other’s perceptions* of us, something we could never do with face to face contact.
 
-Time to realize other’s have no perception of us at all. Think about online comment sections.
+*Time to realize other’s have no perception of us at all*. Think about online comment sections.
 
 We can all communicate better through text. Text gives you the opportunity to express exactly who you want to be. If you have to *assume* anything about the person on the opposite screen for your message to be understood. Don't take the risk, iterate.
 
