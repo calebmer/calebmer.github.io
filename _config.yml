@@ -10,7 +10,7 @@ permalink: pretty
 
 home: /
 baseurl:
-url: http://calebmer.github.io
+url: https://calebmer.github.io
 
 exclude:
   - node_modules
