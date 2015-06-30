@@ -28,8 +28,6 @@ One of the most (important?) inventions of the 21st century, emojis are more the
 “Super excited”<br>
 “Super excited :D”
 
-* * *
-
 Emojis also make us better liars.
 
 Normally in your communication you do not get the affordance of time to form a statement. When you communicate by text&mdash;time and emojis are the two things in *excess*.
