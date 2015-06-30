@@ -1,3 +1,5 @@
+development: false
+
 title: Dirty Laundry
 subtitle: Without all the heartache
 description: A blog about the state of web technologies and other musings about life. Inspired by a pile of dirty laundry.
@@ -9,7 +11,6 @@ permalink: pretty
 home: /
 baseurl:
 url: http://calebmer.github.io
-development: false
 
 exclude:
   - node_modules

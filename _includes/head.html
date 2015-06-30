@@ -10,7 +10,8 @@
   <meta name="twitter:title" content="{{ page.title }}">
   <meta name="twitter:description" content="{{ page.summary }}">
   <meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+  {% if page.noindex %}<meta name="robots" content="noindex">{% endif %}
 
-  <link rel="stylesheet" href="/assets/styles/main.css">
   <link rel="canonical" href="{{ site.url }}">
+  <link rel="stylesheet" href="{{ site.url }}/assets/styles/main.css">
 </head>

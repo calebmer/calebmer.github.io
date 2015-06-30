@@ -1,18 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" class="{% if site.development %}is-development{% endif %} has-no-js">
-  {% include head.html %}
+---
+layout: frame
+---
 
-  <body>
-    <div id="container">
-      {% include header.html %}
+{% include header.html %}
 
-      <main class="page">
-        {{ content }}
-      </main>
+<main class="page">
+  {{ content }}
+</main>
 
-      {% include footer.html %}
-    </div>
-
-    {% include foot.html %}
-  </body>
-</html>
+{% include footer.html %}
