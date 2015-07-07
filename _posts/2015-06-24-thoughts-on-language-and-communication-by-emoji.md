@@ -14,7 +14,8 @@ Yet somehow it is not enough.
 
 Communication, *human interaction*, through just words is hard.
 
-“Hey dork,” Bob types.<br>
+“Hey dork,” Bob types.
+
 “What’s up loser,” types Joe.
 
 Bob and Joe could be two dudes in a deep bromance, or they could be mortal enemies.
@@ -25,7 +26,8 @@ Thus enters emoji :)
 
 One of the most (important?) inventions of the 21st century, emojis are more then annoying yellow circles, emojis *reintroduce* many of the non-verbal qualities we miss in our digital conversations. For example:
 
-“Super excited”<br>
+“Super excited”
+
 “Super excited :D”
 
 Emojis also make us better liars.
