@@ -1,4 +1,4 @@
-MODULES = node_modules/.bin/
+MODULES = node_modules/.bin
 SITE = _site
 ASSETS = assets
 
@@ -10,24 +10,26 @@ STYLES_BUILD = $(ASSETS)/styles/main.css
 
 FRONTMATTER = ---\n---\n
 
-.PHONY: clean serve monitor watch
+.PHONY: all clean serve monitor watch
 
-scripts:
-	$(MODULES)browserify \
-		$(SCRIPTS_SOURCE)/main.js \
-	|	$(MODULES)uglifyjs \
+all: $(SCRIPTS_BUILD) $(STYLES_BUILD)
+
+$(SCRIPTS_BUILD): $(SCRIPTS_SOURCE)/main.js
+	$(MODULES)/browserify \
+		$< \
+	|	$(MODULES)/uglifyjs \
 		--compress --mangle \
 	| echo "$(FRONTMATTER)$$(cat -)" \
-	> $(SCRIPTS_BUILD)
+	> $@
 
-styles:
-	$(MODULES)node-sass \
+$(STYLES_BUILD): $(STYLES_SOURCE)/main.sass
+	$(MODULES)/node-sass \
 		--output-style compressed \
-		$(STYLES_SOURCE)/main.sass \
-	| $(MODULES)postcss \
+		$< \
+	| $(MODULES)/postcss \
 		--use autoprefixer \
 	| echo "$(FRONTMATTER)$$(cat -)" \
-	> $(STYLES_BUILD)
+	> $@
 
 clean:
 	rm $(SCRIPTS_BUILD) $(STYLES_BUILD)
@@ -39,16 +41,18 @@ serve:
 		--future --unpublished --drafts
 
 monitor:
-	$(MODULES)nodemon \
+	$(MODULES)/nodemon \
 		-w $(SCRIPTS_SOURCE) -e js \
-		-x "make scripts" \
-	& $(MODULES)nodemon \
+		-x "make $(SCRIPTS_BUILD)" \
+	& $(MODULES)/nodemon \
 		-w $(STYLES_SOURCE) -e sass \
-		-x "make styles"
+		-x "make $(STYLES_BUILD)"
+	wait
 
 watch:
 	make monitor \
-	& $(MODULES)browser-sync start \
+	& $(MODULES)/browser-sync start \
 		--no-notify \
 		--files $(SITE) \
 	& make serve
+	wait
