@@ -1,7 +1,7 @@
 # How to Think About Type Systems
 
 Pick the programming language you know best. I’ll pick JavaScript. Now imagine
-every value you could possibly create in that language. Yes _every value_.
+every value you could create in that language. Yes, _every value_.
 
 In JavaScript you’d have numbers like 0, 1, -42, and 3.14. You’d have strings
 like the empty string `""` or the classic `"Hello, World!"`. You’d have objects
@@ -53,7 +53,7 @@ the set of all number values in your programming language.
 TODO: Image of the value universe, but now with all the numbers circled
 
 TypeScript gives us a feature not available in many other type systems. Union
-types. With a union type we may write `number | string` which represents the
+types. With a union type, we may write `number | string` which represents the
 `number` type _or_ the `string` type. A value with a type of `number | string`
 may be any value in the set of all strings _or_ any value in the set of all
 numbers.
@@ -61,9 +61,9 @@ numbers.
 TODO: Image of the value universe, but now with all the strings _and_ numbers
 circled
 
-We may simply ask a type system the question “is this value a member of my
-type’s set of values?” This allows us to compare individual values to types.
-Type systems also have the difficult task of comparing two types to each other.
+We may ask a type system the question: “is this value a member of my type’s set
+of values?” This allows us to compare individual values to types. Type systems
+also have the difficult task of comparing two types to each other.
 
 Let’s think about some smaller sets. Let’s say we write a TypeScript type which
 can be any number zero through nine.
@@ -94,8 +94,8 @@ The function `isOdd()` will tell us if our digit is an odd number. While the
 implementation of `isOdd()` will work on any number we limit the type of its
 parameter to `Digit`. The function `toBoolean()` will convert a `BinaryDigit`
 into a boolean where `0` is `false` and `1` is `true`. It calls the `isOdd()`
-function which expects a `Digit`. However, `BinaryDigit` is a different type
-than `Digit`! This program works because the set of values represented by the
+function which expects a `Digit`. But, `BinaryDigit` is a different type than
+`Digit`! This program works because the set of values represented by the
 `BinaryDigit` type is a subset of the set of values represented by the `Digit`
 type. Every value in `BinaryDigit` _also_ exists in `Digit`.
 
@@ -103,10 +103,10 @@ TODO: Image of the digit circle and the binary digit circle
 
 We can say that `BinaryDigit` is a subset of `Digit`.
 
-In classic type system lingo we would instead say that `BinaryDigit` is a
+In classic type system lingo, we would instead say that `BinaryDigit` is a a
 subtype of `Digit`.
 
-More commonly, subtyping comes up in the context of classes.
+Usually, subtyping comes up in the context of classes.
 
 ```ts
 class Animal {
@@ -165,7 +165,7 @@ Your type is too broad. It contains the empty string (`""`) or an entire
 sentence (`"The quick brown fox jumps over the lazy dog."`).
 
 Some type systems will allow you to create custom data types. With a custom data
-type you can force the type to only be constructed in the module where the data
+type, you can force the type to only be constructed in the module where the data
 type is defined. That means you can have a custom `UserName` data type and no
 one outside of your `UserName` module can create a new `UserName`. (tangent: how
 I do this in TypeScript TODO: link)
@@ -193,8 +193,8 @@ of possible values then one already expressible in the types.
 If you like this way of thinking about type systems and you’d like to dive into
 the deep end then here’s some more thoughts for ya!
 
-- In **C**, every value is logically a collection of bits. A 64 bit integer
-  type, 64 bit float type, and a 64 bit pointer type all have the _same set of
+- In **C**, every value is logically a collection of bits. A 64-bit integer
+  type, 64-bit float type, and a 64-bit pointer type all have the _same set of
   values_ at runtime. Yet the type system treats them as different types. Under
   the intuition of type systems proposed by this post we can explain this using
   custom data types. Custom data types allow us to give the same set of values
@@ -202,10 +202,10 @@ the deep end then here’s some more thoughts for ya!
 - JavaScript type systems also have the **intersection** type operator. `A & B`.
   Which represents the values shared by `A`’s set of values and `B`’s set of
   values. Like a Venn diagram. One missing primitive set operation in JavaScript
-  type systems is the difference operator. For example if we call the difference
-  operator `/` then `number / 10` is every number _except_ for 10. Sure Flow has
-  object difference and TypeScript has object difference and union difference,
-  but there’s no true set difference operator.
+  type systems is the difference operator. For example, if we call the
+  difference operator `/` then `number / 10` is every number _except_ for 10.
+  Sure Flow has object difference and TypeScript has object difference and union
+  difference, but there’s no true set difference operator.
 - Type **Inference** capabilities of different type systems affect how types
   implicitly relate to each other. Common wisdom is that if you have
   sophisticated type inference you can’t have implicit subtyping. TypeScript has
@@ -231,6 +231,7 @@ the deep end then here’s some more thoughts for ya!
 - The [“Extensible records with scoped labels”][extensible-records] paper is an
   interesting read if you like object width-subtyping in TypeScript and Flow but
   you want ML inference.
+- I gave a [talk](https://youtu.be/M6MsDBFwa6Y) once about similar ideas.
 
 [rust-virtual-structs]:
   http://smallcultfollowing.com/babysteps/blog/2015/08/20/virtual-structs-part-3-bringing-enums-and-structs-together/
