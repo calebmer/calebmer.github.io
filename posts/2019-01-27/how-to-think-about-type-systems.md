@@ -98,10 +98,6 @@ function which expects a `Digit`. But, `BinaryDigit` is a different type than
 `BinaryDigit` type is a subset of the set of values represented by the `Digit`
 type. Every value in `BinaryDigit` _also_ exists in `Digit`.
 
-TODO: Image of the digit circle and the binary digit circle
-
-We can say that `BinaryDigit` is a subset of `Digit`.
-
 In classic type system lingo, we would instead say that `BinaryDigit` is a a
 subtype of `Digit`.
 
@@ -124,8 +120,6 @@ function doSomethingWithDog(dog: Dog) {
   return doSomethingWithAnimal(dog);
 }
 ```
-
-TODO: Image of subtyping circles with animals and dogs
 
 Every instance of `Dog` is also an instance of `Animal`.
 
