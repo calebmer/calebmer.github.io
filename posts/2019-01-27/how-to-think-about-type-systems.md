@@ -11,7 +11,7 @@ developer. You’d have functions like `function add(a, b) { return a + b }` or
 
 That’s a lot of values. An infinite amount of values.
 
-TODO: Image of the value universe
+![The JavaScript Value Universe](./value-universe-all.png)
 
 This is the set of all values for your programming language.
 
@@ -45,12 +45,12 @@ A type represents a set of values. Here we say the type of `id` is a string.
 That is, the `id` may be any value in the set of _all_ string values in your
 programming language.
 
-TODO: Image of the value universe, but now with all the strings circled
+![The JavaScript Value Universe with strings circled](./value-universe-strings.png)
 
 Likewise, if we annotated `id` as a number type then `id` may be any value in
 the set of all number values in your programming language.
 
-TODO: Image of the value universe, but now with all the numbers circled
+![The JavaScript Value Universe with numbers circled](./value-universe-numbers.png)
 
 TypeScript gives us a feature not available in many other type systems. Union
 types. With a union type, we may write `number | string` which represents the
@@ -58,8 +58,7 @@ types. With a union type, we may write `number | string` which represents the
 may be any value in the set of all strings _or_ any value in the set of all
 numbers.
 
-TODO: Image of the value universe, but now with all the strings _and_ numbers
-circled
+![The JavaScript Value Universe with strings and numbers circled](./value-universe-strings-and-numbers.png)
 
 We may ask a type system the question: “is this value a member of my type’s set
 of values?” This allows us to compare individual values to types. Type systems
@@ -141,7 +140,7 @@ if (x > 0) {
 }
 ```
 
-TODO: value universe only circling positive types
+![The JavaScript Value Universe with strings circled](./value-universe-numbers-positive.png)
 
 Type systems will automatically narrow the set of possible values for your
 variables, but having a type system alone is _not enough_.
@@ -159,7 +158,7 @@ If you type your user name as a string…
 type UserName = string;
 ```
 
-TODO: Image of the value universe containing all strings
+![The JavaScript Value Universe with strings circled](./value-universe-strings.png)
 
 Your type is too broad. It contains the empty string (`""`) or an entire
 sentence (`"The quick brown fox jumps over the lazy dog."`).
@@ -183,7 +182,7 @@ function createUserName(name) {
 }
 ```
 
-TODO: Image of the value universe containing only user name strings
+![The JavaScript Value Universe with strings circled](./value-universe-strings-usernames.png)
 
 Now you may use your type system to automatically remember an even narrower set
 of possible values then one already expressible in the types.
