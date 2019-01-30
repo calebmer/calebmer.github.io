@@ -2,7 +2,6 @@
 layout: post
 title: 'How to Think About Type Systems'
 date: 2019-01-30 09:43:07 -0800
-categories: types javascript typescript
 ---
 
 Pick the programming language you know best. I’ll pick JavaScript. Now imagine
