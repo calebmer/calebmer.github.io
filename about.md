@@ -14,9 +14,9 @@ I previously was at Facebook where I worked on:
 - [Prepack][prepack]
 - [Oculus Go][oculus-go]
 
-I’ve also was a core contributor on the [Apollo Client][apollo-client], built
-the initial versions of [PostGraphile][postgraphile], and did contract work with
-[G2i][g2i].
+I also was a core contributor on the [Apollo Client][apollo-client], built the
+initial versions of [PostGraphile][postgraphile], and partnered with [G2i][g2i]
+on several contract projects.
 
 [Baruch-Adi Hen](http://www.baruchadi.com) is my blogging accountability partner
 😉
