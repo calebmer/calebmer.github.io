@@ -1,4 +1,9 @@
-# How to Think About Type Systems
+---
+layout: post
+title: 'How to Think About Type Systems'
+date: 2019-01-30 09:43:07 -0800
+categories: types javascript typescript
+---
 
 Pick the programming language you know best. I’ll pick JavaScript. Now imagine
 every value you could create in that language. Yes, _every value_.
@@ -11,7 +16,7 @@ developer. You’d have functions like `function add(a, b) { return a + b }` or
 
 That’s a lot of values. An infinite amount of values.
 
-![The JavaScript Value Universe](./value-universe-all.png)
+<img class="img-value-universe" src="/assets/images/how-to-think-about-type-systems/value-universe-all.png" alt="The JavaScript Value Universe">
 
 This is the set of all values for your programming language.
 
@@ -45,12 +50,12 @@ A type represents a set of values. Here we say the type of `id` is a string.
 That is, the `id` may be any value in the set of _all_ string values in your
 programming language.
 
-![The JavaScript Value Universe with strings circled](./value-universe-strings.png)
+<img class="img-value-universe" src="/assets/images/how-to-think-about-type-systems/value-universe-strings.png" alt="The JavaScript Value Universe with strings circled">
 
 Likewise, if we annotated `id` as a number type then `id` may be any value in
 the set of all number values in your programming language.
 
-![The JavaScript Value Universe with numbers circled](./value-universe-numbers.png)
+<img class="img-value-universe" src="/assets/images/how-to-think-about-type-systems/value-universe-numbers.png" alt="The JavaScript Value Universe with numbers circled">
 
 TypeScript gives us a feature not available in many other type systems. Union
 types. With a union type, we may write `number | string` which represents the
@@ -58,7 +63,7 @@ types. With a union type, we may write `number | string` which represents the
 may be any value in the set of all strings _or_ any value in the set of all
 numbers.
 
-![The JavaScript Value Universe with strings and numbers circled](./value-universe-strings-and-numbers.png)
+<img class="img-value-universe" src="/assets/images/how-to-think-about-type-systems/value-universe-strings-and-numbers.png" alt="The JavaScript Value Universe with strings and numbers circled">
 
 We may ask a type system the question: “is this value a member of my type’s set
 of values?” This allows us to compare individual values to types. Type systems
@@ -134,7 +139,7 @@ if (x > 0) {
 }
 ```
 
-![The JavaScript Value Universe with strings circled](./value-universe-numbers-positive.png)
+<img class="img-value-universe" src="/assets/images/how-to-think-about-type-systems/value-universe-numbers-positive.png" alt="The JavaScript Value Universe with strings circled">
 
 Type systems will automatically narrow the set of possible values for your
 variables, but having a type system alone is _not enough_.
@@ -152,7 +157,7 @@ If you type your user name as a string…
 type UserName = string;
 ```
 
-![The JavaScript Value Universe with strings circled](./value-universe-strings.png)
+<img class="img-value-universe" src="/assets/images/how-to-think-about-type-systems/value-universe-strings.png" alt="The JavaScript Value Universe with strings circled">
 
 Your type is too broad. It contains the empty string (`""`) or an entire
 sentence (`"The quick brown fox jumps over the lazy dog."`).
@@ -160,8 +165,8 @@ sentence (`"The quick brown fox jumps over the lazy dog."`).
 Some type systems will allow you to create custom data types. With a custom data
 type, you can force the type to only be constructed in the module where the data
 type is defined. That means you can have a custom `UserName` data type and no
-one outside of your `UserName` module can create a new `UserName`. (tangent: how
-I do this in TypeScript TODO: link)
+one outside of your `UserName` module can create a new `UserName`. (tangent:
+[how I do this in TypeScript](/tangents/opaque-types-in-typescript))
 
 You can put as many conditions on your `UserName` as you’d like. Such as a
 regular expression.
@@ -176,7 +181,7 @@ function createUserName(name) {
 }
 ```
 
-![The JavaScript Value Universe with strings circled](./value-universe-strings-usernames.png)
+<img class="img-value-universe" src="/assets/images/how-to-think-about-type-systems/value-universe-strings-usernames.png" alt="The JavaScript Value Universe with strings circled">
 
 Now you may use your type system to automatically remember an even narrower set
 of possible values then one already expressible in the types.
@@ -226,7 +231,7 @@ the deep end then here’s some more thoughts for ya!
   you want ML inference.
 - I gave a [talk](https://youtu.be/M6MsDBFwa6Y) once about similar ideas.
 
-[rust-virtual-structs]:
-  http://smallcultfollowing.com/babysteps/blog/2015/08/20/virtual-structs-part-3-bringing-enums-and-structs-together/
-[extensible-records]:
-  https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/scopedlabels.pdf
+<!-- prettier-ignore-start -->
+[rust-virtual-structs]: http://smallcultfollowing.com/babysteps/blog/2015/08/20/virtual-structs-part-3-bringing-enums-and-structs-together/
+[extensible-records]: https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/scopedlabels.pdf
+<!-- prettier-ignore-end -->

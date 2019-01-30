@@ -16,6 +16,9 @@
     "editor.wordWrap": "wordWrapColumn",
     "editor.wordWrapColumn": 80
   },
+  "[html]": {
+    "editor.formatOnSave": false
+  },
   "prettier.trailingComma": "es5",
   "prettier.bracketSpacing": false
 }

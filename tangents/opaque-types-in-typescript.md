@@ -1,4 +1,7 @@
-# Opaque Types in TypeScript
+---
+layout: page
+title: 'Opaque Types in TypeScript'
+---
 
 My favorite feature in Flow is the [“opaque type”][flow-opaque-types]. Opaque
 types may only be _created_ in the file where the opaque type was defined. Which
