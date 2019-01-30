@@ -1,0 +1,18 @@
+---
+# Only the main Sass file needs front matter
+---
+
+@import 'minima';
+
+.profile-pic {
+  float: right;
+  width: 220px;
+  height: 220px;
+  margin-left: 30px;
+}
+
+.img-value-universe {
+  display: block;
+  width: 80%;
+  margin: 50px auto;
+}

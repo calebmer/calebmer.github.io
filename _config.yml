@@ -1,0 +1,26 @@
+# Site settings
+title: Code → Software
+email: calebmeredith8@gmail.com
+description: Caleb Meredith’s blog.
+url: https://calebmer.com
+twitter_username: calebmer
+github_username: calebmer
+header_pages:
+  - about.md
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .vscode
