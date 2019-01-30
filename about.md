@@ -8,13 +8,13 @@ permalink: /about/
 
 Hi, I’m Caleb Meredith 👋
 
-I previously was at Facebook where I worked on:
+I worked at Facebook on:
 
 - [Flow][flow]
 - [Prepack][prepack]
 - [Oculus Go][oculus-go]
 
-I also was a core contributor on the [Apollo Client][apollo-client], built the
+I was also a core contributor on the [Apollo Client][apollo-client], built the
 initial versions of [PostGraphile][postgraphile], and partnered with [G2i][g2i]
 on several contract projects.
 
