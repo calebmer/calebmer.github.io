@@ -5,6 +5,7 @@ description: Caleb Meredith’s blog.
 url: https://calebmer.com
 twitter_username: calebmer
 github_username: calebmer
+google_analytics: UA-63972614-2
 header_pages:
   - about.md
 
