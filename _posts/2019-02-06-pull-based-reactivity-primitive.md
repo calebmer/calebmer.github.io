@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Pull Based Reactivity Primitive'
+title: 'Pull-Based Reactivity Primitive'
 date: 2019-02-06 08:00:00 -0800
 ---
 
@@ -38,7 +38,7 @@ button.addEventListener('click', () => {
 });
 ```
 
-React uses a pull based reactivity model which is subtly different. I’ll be
+React uses a pull-based reactivity model which is subtly different. I’ll be
 using [React Hooks][react-hooks] in my examples.
 
 [react-hooks]: https://reactjs.org/docs/hooks-intro.html
@@ -56,7 +56,7 @@ function MyButton() {
 ```
 
 The `setCount()` function does not _push_ a new state to the React component.
-Instead it invalidates the current state and lets React update the component
+Instead, it invalidates the current state and lets React update the component
 whenever it wants. (The same is true for `setState()` in a class component.)
 
 It’s like we wrote:
@@ -96,7 +96,7 @@ function handleClick() {
 Even though you called `setCount()`, the value for `count` does not change! The
 value for `count` will change _eventually_ but not immediately. This is because
 when you call `setCount()`, React in Concurrent Mode doesn’t immediately update
-your component. Instead it _schedules_ an update to happen at some later time.
+your component. Instead, it _schedules_ an update to happen at some later time.
 
 If the action is user-generated, like a click, React will schedule an update
 with a higher priority. If the action is not user-generated, like you just got a
@@ -106,9 +106,9 @@ priority.
 This means if a user clicks at the same time you get a big JSON blob from your
 backend the user’s click will always be prioritized and rendered _first_.
 
-This just isn’t possible in a push based reactivity system. In a push based
+This just isn’t possible in a push-based reactivity system. In a push-based
 reactivity system the producer has control over when an action is processed. If
-I push you something, you _must_ process it. In a pull based reactivity system
+I push you something, you _must_ process it. In a pull-based reactivity system
 the consumer has control over when an action is processed. If I push you
 something, I don’t get to tell you when it is processed.
 
@@ -121,7 +121,7 @@ Concurrent React takes full advantage of this control by using a
 
 ## Rust Futures
 
-[Rust futures][rust-futures] are another example of pull based reactivity.
+[Rust futures][rust-futures] are another example of pull-based reactivity.
 Futures in Rust are like promises in JavaScript. However, while a JavaScript
 promise is push-based a Rust future is pull-based. Like most things in Rust,
 futures aim to be a zero-cost abstraction for async IO.
@@ -138,7 +138,7 @@ trait Future {
 }
 ```
 
-The type [`Poll<Item, Error>`][rust-poll] type may have on of three states:
+The type [`Poll<Item, Error>`][rust-poll] type may have one of three states:
 
 [rust-poll]: https://docs.rs/futures/0.1.25/futures/type.Poll.html
 
@@ -228,7 +228,7 @@ Rust future’s implementation of pull-based reactivity is _invalidation_. Inste
 of pushing new values to listeners, these implementations will tell listeners
 when there is a new value.
 
-There are two fundamental operations to the pull based reactivity primitive:
+There are two fundamental operations to the pull-based reactivity primitive:
 
 - `get()` which retrieves the value and possibly does some computation.
 - `invalidate()` which tells listeners that the value has changed.
@@ -309,6 +309,6 @@ to consider when implementing a full pull-based reactivity primitive:
   forced before your reactor callback is executed.
 - [Skip](https://github.com/skiplang/skip) is an experimental programming
   language which is entirely reactive except for its external data sources which
-  use this pull based reactivity model. When a Skip data source invalidates,
+  use this pull-based reactivity model. When a Skip data source invalidates,
   then Skip will invalidate all reactive cache entries that depend on that data
   source.
