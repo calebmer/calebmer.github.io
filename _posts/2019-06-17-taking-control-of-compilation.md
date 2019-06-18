@@ -104,7 +104,7 @@ directly inline the constant result of calling `fibonacci(12)`.
 
 Let’s consider a more advanced example, translations.
 
-```js
+```jsx
 import App from './App';
 import TranslationContext from './TranslationContext';
 
@@ -143,7 +143,7 @@ compile it statically at buildtime. Like [Gatsby](https://www.gatsbyjs.org/)!
 It‘s not just our top level application files that run at buildtime. _Every one
 of our files would run at buildtime._
 
-```js
+```jsx
 export function TodoItem() {
   const data = useQuery(query);
 
@@ -176,7 +176,7 @@ The only difference is we’d do it at buildtime instead of runtime.
 
 To use a React component defined like this:
 
-```js
+```jsx
 import TodoItem from './TodoItem';
 
 // Nope! We don’t render in the module scope.
