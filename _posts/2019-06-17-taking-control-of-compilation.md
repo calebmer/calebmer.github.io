@@ -191,7 +191,8 @@ Build.createBundle('app.js', () => {
 
 ## Interested?
 
-Does this model of execution interest you?
+Does this model of execution interest you? Let me know! Twitter:
+[@calebmer](https://twitter.com/calebmer).
 
 There’s a lot to figure out to make this work in JavaScript. I imagine we could
 create an AST transform that adds an environment record of the variables
