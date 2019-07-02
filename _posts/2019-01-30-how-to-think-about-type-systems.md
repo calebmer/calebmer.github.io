@@ -15,7 +15,7 @@ developer. You’d have functions like `function add(a, b) { return a + b }` or
 
 That’s a lot of values. An infinite amount of values.
 
-<img class="img-value-universe" src="/assets/images/how-to-think-about-type-systems/value-universe-all.png" alt="The JavaScript Value Universe">
+<img class="img-center-shrink" src="/assets/images/how-to-think-about-type-systems/value-universe-all.png" alt="The JavaScript Value Universe">
 
 This is the set of all values for your programming language.
 
@@ -49,12 +49,12 @@ A type represents a set of values. Here we say the type of `id` is a string.
 That is, the `id` may be any value in the set of _all_ string values in your
 programming language.
 
-<img class="img-value-universe" src="/assets/images/how-to-think-about-type-systems/value-universe-strings.png" alt="The JavaScript Value Universe with strings circled">
+<img class="img-center-shrink" src="/assets/images/how-to-think-about-type-systems/value-universe-strings.png" alt="The JavaScript Value Universe with strings circled">
 
 Likewise, if we annotated `id` as a number type then `id` may be any value in
 the set of all number values in your programming language.
 
-<img class="img-value-universe" src="/assets/images/how-to-think-about-type-systems/value-universe-numbers.png" alt="The JavaScript Value Universe with numbers circled">
+<img class="img-center-shrink" src="/assets/images/how-to-think-about-type-systems/value-universe-numbers.png" alt="The JavaScript Value Universe with numbers circled">
 
 TypeScript gives us a feature not available in many other type systems. Union
 types. With a union type, we may write `number | string` which represents the
@@ -62,7 +62,7 @@ types. With a union type, we may write `number | string` which represents the
 may be any value in the set of all strings _or_ any value in the set of all
 numbers.
 
-<img class="img-value-universe" src="/assets/images/how-to-think-about-type-systems/value-universe-strings-and-numbers.png" alt="The JavaScript Value Universe with strings and numbers circled">
+<img class="img-center-shrink" src="/assets/images/how-to-think-about-type-systems/value-universe-strings-and-numbers.png" alt="The JavaScript Value Universe with strings and numbers circled">
 
 We may ask a type system the question: “is this value a member of my type’s set
 of values?” This allows us to compare individual values to types. Type systems
@@ -138,7 +138,7 @@ if (x > 0) {
 }
 ```
 
-<img class="img-value-universe" src="/assets/images/how-to-think-about-type-systems/value-universe-numbers-positive.png" alt="The JavaScript Value Universe with strings circled">
+<img class="img-center-shrink" src="/assets/images/how-to-think-about-type-systems/value-universe-numbers-positive.png" alt="The JavaScript Value Universe with strings circled">
 
 Type systems will automatically narrow the set of possible values for your
 variables, but having a type system alone is _not enough_.
@@ -156,7 +156,7 @@ If you type your user name as a string…
 type UserName = string;
 ```
 
-<img class="img-value-universe" src="/assets/images/how-to-think-about-type-systems/value-universe-strings.png" alt="The JavaScript Value Universe with strings circled">
+<img class="img-center-shrink" src="/assets/images/how-to-think-about-type-systems/value-universe-strings.png" alt="The JavaScript Value Universe with strings circled">
 
 Your type is too broad. It contains the empty string (`""`) or an entire
 sentence (`"The quick brown fox jumps over the lazy dog."`).
@@ -180,7 +180,7 @@ function createUserName(name) {
 }
 ```
 
-<img class="img-value-universe" src="/assets/images/how-to-think-about-type-systems/value-universe-strings-usernames.png" alt="The JavaScript Value Universe with strings circled">
+<img class="img-center-shrink" src="/assets/images/how-to-think-about-type-systems/value-universe-strings-usernames.png" alt="The JavaScript Value Universe with strings circled">
 
 Now you may use your type system to automatically remember an even narrower set
 of possible values then one already expressible in the types.
