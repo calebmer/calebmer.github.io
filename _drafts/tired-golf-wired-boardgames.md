@@ -59,7 +59,7 @@ the humans discover the werewolves, humans win. Otherwise the werewolves win. So
 the werewolves must lie and pretend they are villagers to not get caught. The
 game also gives some human roles “powers” like the power to see the role of one
 other person or the power to swap two roles.
-[You can watch some game play for Werewolf here.](https://youtu.be/bJ4Hrp8gQ-E)
+[You can watch some game play here.](https://youtu.be/bJ4Hrp8gQ-E)
 
 Werewolf is in the hidden information genre and is actually a very common format
 for tabletop games. Growing up, I knew this format as
