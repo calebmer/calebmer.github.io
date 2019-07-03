@@ -9,6 +9,11 @@ google_analytics: UA-63972614-2
 header_pages:
   - about.md
 
+# Content settings
+collections:
+  drafts:
+    output: true
+
 # Build settings
 markdown: kramdown
 theme: minima
