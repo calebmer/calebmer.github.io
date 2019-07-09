@@ -20,7 +20,7 @@ process. You can see the final code in a
 I’m going to describe my entire adventure in this post. Through my experience I
 hope to inspire you to take control of your code. If writing a virtualized list,
 or anything else, would make your user’s life better, you should do it! You need
-not be bounded to existing libraries. You have the power to fork and modify
+not be bound to existing libraries. You have the power to fork and modify
 dependencies as you see fit. Fear not the unfamiliar, if someone out there wrote
 a virtualized list then there’s no reason you can’t!
 
@@ -296,7 +296,7 @@ future, I fork. Then I have criteria for proposing my forked changes upstream.
 - Can I justify the change to contributors?
 
 This is a lot of work and slows down shipping. To me, it‘s more valuable to live
-on a fork for a few months and fix bugs for users _immediately_ then to make
+on a fork for a few months and fix bugs for users _immediately_ than to make
 users wait a few months for a proper open source release with the change.
 
 The best part of open source is that it’s, well, open. You have the power to
