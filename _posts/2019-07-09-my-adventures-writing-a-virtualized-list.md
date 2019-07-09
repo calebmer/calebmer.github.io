@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 'My Adventures Writing a Cross-Platform Virtualized List'
+date: 2019-07-09 11:00:00 -0800
+redirect_from: /drafts/my-adventures-writing-a-virtualized-list
 ---
 
 I wrote a virtualized list! It was quite the adventure.
