@@ -85,13 +85,13 @@ post, I had know way of knowing the item heights!
 
 There’s a PR open to
 [add a dynamically sized virtualized list for `react-window`](https://github.com/bvaughn/react-window/issues/6),
-but it hadn’t been merged yet. Even if that PR were merged into `react-window` I
-_still_ wouldn’t have been able to use it.
+but it hadn’t been merged yet.
 
-1. I needed to incrementally load items in the list when they scrolled into
-   view. While the items were loading I needed shimmer placeholders.
-2. I needed a solution that would also work on React Native iOS and Android.
-   `react-window` is web only.
+I needed to incrementally load items in the list when they scrolled into view
+and while the items were loading I needed shimmer placeholders. I couldn’t do
+this with `FlatList` but I could with the unmerged `react-window` PR! However, I
+needed a solution that would also work on React Native iOS and Android.
+`react-window` is web only.
 
 Well, that meant I needed to write my own virtualized list.
 
