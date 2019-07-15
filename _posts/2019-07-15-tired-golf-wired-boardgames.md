@@ -1,6 +1,8 @@
 ---
 layout: post
 title: 'Tired: Golf, Wired: Boardgames'
+date: 2019-07-15 11:00:00 -0800
+redirect_from: /drafts/tired-golf-wired-boardgames
 ---
 
 My mom is an accountant and a lot of people in her office enjoy playing golf.
