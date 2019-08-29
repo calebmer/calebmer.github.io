@@ -14,6 +14,7 @@ TypeScript doesn’t have opaque types, so I simulate them with unique symbols.
 
 ```ts
 type UserName = string & {_tag: typeof UserName};
+
 declare const UserName: unique symbol;
 
 // Error! `string` is not assignable to `UserName`.
