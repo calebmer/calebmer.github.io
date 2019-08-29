@@ -13,7 +13,7 @@ name is in the correct format and returns an opaque `UserName` type.
 TypeScript doesn’t have opaque types, so I simulate them with unique symbols.
 
 ```ts
-type UserName = string & {_opaqueTag: typeof UserName};
+type UserName = string & {_opaque: typeof UserName};
 
 declare const UserName: unique symbol;
 
