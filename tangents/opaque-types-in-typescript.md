@@ -13,9 +13,9 @@ name is in the correct format and returns an opaque `UserName` type.
 TypeScript doesn’t have opaque types, so I simulate them with unique symbols.
 
 ```ts
-type UserName = string & typeof opaqueUserName;
+type UserName = string & {_opaque: typeof UserName};
 
-let opaqueUserName = Symbol();
+declare const UserName: unique symbol;
 
 // Error! `string` is not assignable to `UserName`.
 let notUserName: UserName = 'Hello, world!';
