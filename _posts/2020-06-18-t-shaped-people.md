@@ -4,7 +4,7 @@ title: "T Shaped People"
 date: 2020-06-18
 ---
 
-![Person with arms outstretched in a T-shape on a hill overlooking a lake](/assets/images/posts/2020-06-18-t-shaped-people/cover.jpg)
+![Person with arms outstretched in a T shape on a hill overlooking a lake](/assets/images/posts/2020-06-18-t-shaped-people/cover.jpeg)
 
 As I get the hang of interviewing software engineers, I’m learning a lot from my colleagues who have been doing it much longer than me. One of the things that’s most surprising to me is that they don’t look for exact skill set matches for the interview. As we all know, software interview questions aren’t the best indicator for what day-to-day working with a person is like. To answer perfectly, the questions we ask demand a really broad set of technical expertise. Most candidates that we see (at least at more junior levels) simply won’t have that broad expertise yet. Here’s the cool thing though - we’re not looking for a perfect answer! Instead, we’re reviewing the candidate’s problem-solving approach, and checking the tools they have at their disposal to solve the problem. We do this a lot of the time by looking for a depth of knowledge in some area of technical focus, complemented by a breadth of knowledge to passably solve related problems.
 
